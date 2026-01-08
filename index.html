@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .imaged {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: block !important;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    background-image: url('image_22.webp');
+}
+.box {
+    position: relative;
+    /* display: inline-block; */
+}
+.main_image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="main_image">
+        <div class="box">
+            <div class="imaged"></div>
+            <img src="image_22.webp" alt="">
+        </div>
+        <div class="box">
+            <div class="imaged"></div>
+            <img src="image_22.webp" alt="">
+        </div>
+        <div class="box">
+            <div class="imaged"></div>
+            <img src="image_22.webp" alt="">
+        </div>
+        <div class="box">
+            <div class="imaged"></div>
+            <img src="image_22.webp" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+          $('.imaged').ripples('show');        
+        });
+  
+      </script> 
+</body>
+</html>
